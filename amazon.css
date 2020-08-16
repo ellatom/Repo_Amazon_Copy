@@ -633,7 +633,6 @@ body {
 .page-1__flex_right_side__cart__addcart span {
   display: flex;
   margin-left: 10px;
-  margin:0 auto;
 }
 .page-1__flex_right_side__cart__addcart span a {
   text-decoration: none;
@@ -1337,13 +1336,14 @@ body {
   width: 200px;
   /* text-align: left; */
   display: flex;
+  
 }
 #page-1__flex_right_side__cart button:hover {
   opacity: 80%;
 }
 
 .page-1__flex_right_side__cart__addcart {
-  display: flex;
+  display: flex; 
   background-color: #f1c55d;
   position: relative;
   align-items: center;
@@ -1358,6 +1358,7 @@ body {
 .page-1__flex_right_side__cart__addcart span {
   display: flex;
   margin-left: 10px;
+  margin:0 auto;
 }
 .page-1__flex_right_side__cart__addcart span a {
   text-decoration: none;
