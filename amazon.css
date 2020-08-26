@@ -587,6 +587,7 @@ body {
 #page-1__flex_right_side__cart {
   display: flex;
   flex-direction: column;
+  margin-right: 60px;
   padding: 10px;
   border: 1px solid grey;
 }
@@ -972,6 +973,17 @@ body {
 #navbar1__signin .navbar1__signin_bottom-text,
 #navbar1__return_order .navbar1__signin_bottom-text {
   font-weight: bold;
+}
+#cart{
+  display:flex;
+  flex-direction: column;
+
+}
+.navbar1__cart_count_items{
+  margin:0 auto;
+  color:orange;
+  font-weight: bold;
+  font-size: 16px;
 }
 .navbar1__cart {
   padding: 5px 10px;
@@ -1449,9 +1461,9 @@ body {
 }
 /*gallery*/
 .page-1__flex_center_side__gallery {
-  display: grid;
-  grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
   grid-gap: 10px;
   margin: 10px 0px;
 }
