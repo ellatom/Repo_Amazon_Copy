@@ -104,7 +104,10 @@
                     <div class="navbar1__signin_top-text">Return</div>
                     <div class="navbar1__signin_bottom-text">& Orders</div>
                 </div>
-                <div class="navbar1__cart"><i class="fas fa-shopping-cart"></i>Cart</div>
+                <div id=cart>
+                    <div class="navbar1__cart_count_items">0</div>
+                    <div class="navbar1__cart"><i class="fas fa-shopping-cart"></i>Cart</div>
+                </div>
             </div>
             <div id="navbar-2">
                 <i class="fas fa-map-marker-alt"></i>
@@ -349,5 +352,15 @@
         </div>
         <hr>
     </div>
+    <script>
+        let addToCartBtn= document.querySelector(".page-1__flex_right_side__cart__addcart");
+        let addToCartCounterTxt= document.querySelector(".navbar1__cart_count_items");
+        addToCartBtn.addEventListener("click",addToCartItem);
+        function addToCartItem(event)
+        {
+            addToCartCounterTxt.textContent=Number(addToCartCounterTxt.textContent)+1;
+        }
+
+    </script>
 </body>
 </html>
